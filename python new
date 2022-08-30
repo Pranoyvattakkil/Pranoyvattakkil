@@ -1,0 +1,58 @@
+1. Write Python code to open a file named demo.txt and write some random data into it.
+2. Open the file, read the contents and display them as output.
+3. Write python code to add additional text to the existing file on a new line without deleting the previous contents.
+For solution refer next lecture.
+ 
+ ans:
+ file=open('demo.txt',"r")
+content=file.read()
+print(content)
+file.close()
+
+file=open("demo.txt","w")
+file.write("Hi, Yes its here")
+file.close()
+
+
+file=open("demo.txt","a")
+file.write("\nToday is a good day")
+file.close()
+
+______________________.    __________________________________________________________________________
+
+Create tuple, append, insert of 7 numbers and show the index no from last second one?
+
+x=(20,25,30,35,40,45,50,55,60,65)
+print(x.index(55))
+y=list(x)
+y.insert(9,70)
+
+print(y)
+y.append(80)
+print(y)
+ 
+ _______________________.     ________________________________________________________________________
+ 
+ Create list from an existing list of 8 no s
+From existing list print 2nd index to 6 th index 
+
+x =[100,200,300,400,500,600,700]
+print(x)
+print(x[2:6])
+
+______________________.  ____________________________________________________________________
+
+Write Python code which accepts name of a product and in turn returns their respective prices.
+Make sure to use dictionaries to store products and their respective prices. The dictionary should include at least 5 elements.
+
+
+x={
+    "chair" : 500,
+    "Table" : 200,
+    "Tea"   : 20,
+    "Fruits": 40,
+    "Bed"   : 1000
+}
+
+a=(input("Enter the value :",))
+print(x.get(a))
